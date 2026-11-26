@@ -1,4 +1,6 @@
-// Run before paint; storage may be unavailable in privacy modes.
+// Run before paint; dark tech theme is the default.
 try {
-  if (localStorage.getItem('huy-theme') === 'dark') document.documentElement.dataset.theme = 'dark';
-} catch { /* Light is the deliberate default. */ }
+  if (localStorage.getItem('huy-portfolio-theme') === 'light') {
+    document.documentElement.dataset.theme = 'light';
+  }
+} catch { /* Dark is the default. */ }
