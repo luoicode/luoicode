@@ -21,6 +21,6 @@ This is a new standalone frontend, not the missing source of the old site. It do
 
 ## Cloudflare
 
-Serve `dist/` as static assets with clean directory URLs. The included `wrangler.jsonc` deliberately uses a **new** Worker name, `huy-portfolio-redesign`, so deployment cannot silently overwrite the existing portfolio. From this directory, build, then deploy using an authenticated, supported Wrangler installation. No deployment has been performed by this change. Review the design before changing production routes or the existing Worker.
+Serve `dist/` as static assets with clean directory URLs. The included `wrangler.jsonc` deliberately uses a **new** Worker name, `portfolio`, so deployment cannot silently overwrite the existing portfolio. From this directory, build, then deploy using an authenticated, supported Wrangler installation. No deployment has been performed by this change. Review the design before changing production routes or the existing Worker.
 
 Vietnamese is at `/`, English at `/en/`, with localized case pages at `/work/:slug/` and `/en/work/:slug/`. Navigation and project stories work without JavaScript. JavaScript adds filtering, theme persistence and mobile navigation. There are no trackers, third-party scripts, remote fonts or contact-form backends; contact links use Huy’s published email and phone.

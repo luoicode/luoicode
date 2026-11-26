@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "huy-portfolio-redesign",
+  "name": "portfolio",
   "compatibility_date": "2026-11-26",
   "assets": {
     "directory": "./dist",
