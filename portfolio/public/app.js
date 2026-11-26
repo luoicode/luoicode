@@ -47,28 +47,20 @@ document.querySelectorAll('[data-filter]').forEach(button => {
   });
 });
 
-const themeButton = document.querySelector('.theme-toggle');
-function updateThemeButton() {
-  const dark = document.documentElement.dataset.theme === 'dark';
-  themeButton?.setAttribute('aria-pressed', String(dark));
-  if (themeButton) {
-    themeButton.setAttribute('aria-label', dark ? themeButton.dataset.light : themeButton.dataset.dark);
-    themeButton.title = dark ? themeButton.dataset.light : themeButton.dataset.dark;
-  }
+// Subtle 3D tilt on cosmic project cards
+if (matchMedia('(pointer: fine)').matches && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('.project').forEach(card => {
+    card.addEventListener('pointermove', event => {
+      const r = card.getBoundingClientRect();
+      const x = (event.clientX - r.left) / r.width - 0.5;
+      const y = (event.clientY - r.top) / r.height - 0.5;
+      card.style.transform = 'perspective(900px) rotateX(' + (-y * 5).toFixed(2) + 'deg) rotateY(' + (x * 5).toFixed(2) + 'deg) translateY(-4px)';
+    });
+    card.addEventListener('pointerleave', () => {
+      card.style.transform = '';
+    });
+  });
 }
-updateThemeButton();
-themeButton?.addEventListener('click', () => {
-  const toDark = document.documentElement.dataset.theme !== 'dark';
-  if (toDark) {
-    document.documentElement.dataset.theme = 'dark';
-  } else {
-    delete document.documentElement.dataset.theme;
-  }
-  try {
-    localStorage.setItem('huy-theme-v3', toDark ? 'dark' : 'light');
-  } catch { /* Storage is optional. */ }
-  updateThemeButton();
-});
 
 document.querySelectorAll('[data-copy]').forEach(button => {
   button.addEventListener('click', async event => {
