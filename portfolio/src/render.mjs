@@ -1,7 +1,16 @@
 import vi from './content/vi.json' with { type: 'json' };
 import en from './content/en.json' with { type: 'json' };
 
-export const content = { vi, en };
+// The old English endpoint omits shared media. Reuse the published assets,
+// keeping only text localized rather than dropping every English cover.
+export const content = { vi, en: {
+  ...en,
+  media: vi.media,
+  projects: en.projects.map(project => ({
+    ...project,
+    coverId: project.coverId || vi.projects.find(shared => shared.slug === project.slug)?.coverId || ''
+  }))
+} };
 export const escape = (value = '') => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const e = escape;
 const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>';

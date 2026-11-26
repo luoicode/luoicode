@@ -25,6 +25,14 @@ test('every published media reference is self-hosted and exists', async () => {
     }
   }
 });
+test('English pages display the same real covers as their Vietnamese counterparts', () => {
+  const home = homePage('en');
+  for (const project of content.vi.projects) {
+    const cover = content.vi.media.find(media => media.id === project.coverId);
+    assert.ok(home.includes(`src="${cover.url}"`));
+    assert.ok(projectPage('en', project.slug).includes(`src="${cover.url}"`));
+  }
+});
 test('project pages include real narratives and do not invent unverified results', () => {
   for(const lang of ['vi','en']) for(const p of content[lang].projects) {
     const html=projectPage(lang,p.slug);
