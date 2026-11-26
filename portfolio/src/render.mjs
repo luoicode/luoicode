@@ -39,7 +39,7 @@ function header(lang, activeProject) {
 
 function footer(lang) {
   const t = copy[lang], s = content[lang].settings;
-  return `<footer id="contact" class="contact"><div class="shell"><div class="contact-top">${label('05',t.contactLabel)}<span class="availability"><i></i>${e(s.availability)}</span></div><a class="contact-headline" href="mailto:${e(s.email)}"><h2>${t.contact1}<br><em>${t.contact2}</em></h2><span class="contact-arrow">${arrow}</span></a><div class="contact-links"><a href="mailto:${e(s.email)}">${e(s.email)}${arrow}</a><a href="tel:${e(s.phone.replace(/\s/g,''))}">${e(s.phone)}${arrow}</a><a href="${e(cv(s.cvUrl))}" target="_blank" rel="noopener noreferrer">${t.cv}${arrow}</a></div><div class="footer-bottom"><span>© ${new Date().getUTCFullYear()} ${e(s.name)}</span><span>${e(s.footer)}</span><a href="#top">${t.back} ↑</a></div></div></footer>`;
+  return `<footer id="contact" class="contact"><div class="shell"><div class="contact-top">${label('05',t.contactLabel)}<span class="availability"><i></i>${e(s.availability)}</span></div><a class="contact-headline" href="mailto:${e(s.email)}"><h2>${t.contact1}<br><em>${t.contact2}</em></h2><span class="contact-arrow">${arrow}</span></a><div class="contact-links"><a href="mailto:${e(s.email)}">${e(s.email)}${arrow}</a><a href="tel:${e(s.phone.replace(/\s/g,'').replace(/^0/,'+84'))}">${e(s.phone)}${arrow}</a><a href="${e(cv(s.cvUrl))}" target="_blank" rel="noopener noreferrer">${t.cv}${arrow}</a></div><div class="footer-bottom"><span>© ${new Date().getUTCFullYear()} ${e(s.name)}</span><span>${e(s.footer)}</span><a href="#top">${t.back} ↑</a></div></div></footer>`;
 }
 
 function projectCard(p, i, lang) {

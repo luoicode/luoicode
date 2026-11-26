@@ -47,7 +47,8 @@ test('the published CV, email, and phone are preserved in both languages', () =>
   for(const lang of ['vi','en']) {
     const html=homePage(lang);
     assert.ok(html.includes('mailto:huyhn045@gmail.com'));
-    assert.ok(html.includes('tel:0966962608'));
+    assert.ok(html.includes('tel:+84966962608'));
+    assert.ok(html.includes('0966 96 2608'));
     assert.ok(html.includes('export?format=pdf'));
     assert.ok(html.includes('rel="noopener noreferrer"'));
     assert.equal((html.match(/<h1[ >]/g)||[]).length,1);
