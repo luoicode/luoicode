@@ -1,0 +1,273 @@
+{
+  "settings": {
+    "name": "Nguyễn Hữu Huy",
+    "title": "Content Marketing Ads / Performance Creative",
+    "location": "Ha Dong, Hanoi",
+    "email": "huyhn045@gmail.com",
+    "phone": "0966 96 2608",
+    "heroLine1": "CREATIVE THINKING.",
+    "heroLine2": "PERFORMANCE RESULTS.",
+    "intro": "I turn audience understanding into ideas, and ideas into persuasive content. I connect creative thinking with data to build advertising focused on conversion.",
+    "about": "I’m Huy, working across content and performance marketing with a curiosity about people and how they make decisions. From audience research and sales messaging to video scripts and landing page optimization, I create purposeful content informed by data.",
+    "availability": "Open for freelance projects",
+    "cvUrl": "https://docs.google.com/document/d/1VmkTP-wzL93I2Vb7ISvScsvmuXokan4qP_4vlI8qjPo/edit",
+    "facebookUrl": "",
+    "zaloUrl": "",
+    "profileId": "196db4b0-7184-4033-96f7-ae063fdce757",
+    "heroId": "",
+    "skills": [
+      "Content Strategy",
+      "Creative Ads",
+      "Video Scriptwriting",
+      "Meta Ads",
+      "TikTok Ads",
+      "AI Creative Production",
+      "Landing Page Optimization",
+      "Marketing Analytics"
+    ],
+    "experience": [
+      {
+        "company": "VIBIO",
+        "period": "2026",
+        "role": "Creative Ads · Agriculture",
+        "description": "Developing content ideas, video scripts, visuals, landing pages and advertising campaigns."
+      },
+      {
+        "company": "VNB Global",
+        "period": "09/2025 — 12/2025",
+        "role": "Marketing Ads · F&B Philippines",
+        "description": "Researching audiences and markets, running advertising and building chatbots."
+      },
+      {
+        "company": "Dasshu",
+        "period": "08/2024 — 08/2025",
+        "role": "Marketing Ads · Agriculture",
+        "description": "Researching audiences, developing advertising messages, contributing to content production and campaign optimization."
+      }
+    ],
+    "process": [
+      {
+        "name": "Research",
+        "description": "Listen to customers, explore the market and define the problem to solve."
+      },
+      {
+        "name": "Ideation",
+        "description": "Turn audience understanding into messages, content angles and creative ideas."
+      },
+      {
+        "name": "Scriptwriting",
+        "description": "Develop hooks, story structure and calls to action."
+      },
+      {
+        "name": "Creative Production",
+        "description": "Combine visuals, video and AI tools to bring ideas to life."
+      },
+      {
+        "name": "Testing",
+        "description": "Test creative variations against clear hypotheses and goals."
+      },
+      {
+        "name": "Optimization",
+        "description": "Read the data, capture lessons and keep improving."
+      }
+    ],
+    "contactHeadline": "LET’S CREATE SOMETHING THAT CONVERTS.",
+    "footer": "Independent creative. Intentional impact.",
+    "seoTitle": "Nguyễn Hữu Huy — Content Marketing Ads & Performance Creative",
+    "seoDescription": "Nguyễn Hữu Huy’s portfolio: content strategy, creative advertising, video, landing pages and marketing automation.",
+    "ogImage": "",
+    "copy": {
+      "brand": "HUY",
+      "brandNote": "CREATIVE PORTFOLIO",
+      "navWork": "Selected work",
+      "navAbout": "About me",
+      "navContact": "Let’s talk",
+      "heroLocation": "BASED IN HANOI, VIETNAM",
+      "heroByline": "STRATEGY. STORY. IMPACT.",
+      "heroIndex": "INSIGHT → IDEA → IMPACT",
+      "scrollHint": "SCROLL TO EXPLORE",
+      "workLabel": "SELECTED WORK",
+      "workHeading1": "Ideas with",
+      "workEmphasis": "intent.",
+      "workHeading2": "Work with impact.",
+      "workIntro": "From audience understanding to execution. Selected projects I have contributed to, and how I approach each challenge.",
+      "workNote": "A SELECTION, NOT A LIMIT.",
+      "aboutLabel": "THE MIND BEHIND THE WORK",
+      "aboutHeading": "Hi, I’m",
+      "aboutName": "Huy.",
+      "aboutSticker": "CURIOUS MIND. CREATIVE SOUL.",
+      "aboutTagline": "Content × Performance",
+      "aboutCta": "Let’s make good work",
+      "journeyLabel": "THE JOURNEY SO FAR",
+      "expertiseLabel": "MY TOOLKIT",
+      "expertiseHeading1": "Creative by instinct.",
+      "expertiseEmphasis": "Strategic",
+      "expertiseHeading2": "by design.",
+      "galleryLabel": "CREATIVE PLAYGROUND",
+      "galleryHeading1": "Built to",
+      "galleryEmphasis": "stop",
+      "galleryHeading2": "the scroll.",
+      "galleryIntro": "Images, stories and motion. The building blocks of creative work.",
+      "galleryEmptyLabel": "THE SPACE FOR WHAT’S NEXT",
+      "galleryEmptyTitle": "New ideas. Coming into focus.",
+      "galleryEmptyText": "A space for advertising visuals and videos. Actual creative work will be added here.",
+      "galleryEmptyTag": "Creative gallery · No media yet",
+      "processLabel": "HOW I WORK",
+      "processHeading1": "A little curiosity.",
+      "processHeading2": "A clear",
+      "processEmphasis": "process.",
+      "processIntro": "Creativity is a process. Every step has a purpose.",
+      "processDetailLabel": "FROM THINKING TO MAKING",
+      "contactLabel": "GOT A PROJECT IN MIND?",
+      "footerWordmark": "LET’S MAKE IT",
+      "caseOverview": "Project Overview",
+      "caseChallenge": "Challenge",
+      "caseObjectives": "Objectives",
+      "caseInsights": "Audience Insight",
+      "caseStrategy": "Creative Strategy",
+      "caseAngles": "Content Angles",
+      "caseExecution": "Execution Process",
+      "caseResults": "Performance Results",
+      "caseLearnings": "Key Learnings",
+      "caseGallery": "Creative & Video Gallery"
+    },
+    "heroButtons": {
+      "work": "Explore My Work",
+      "cv": "Download CV",
+      "contact": "Let’s Work Together"
+    },
+    "theme": {
+      "background": "#0B0D12",
+      "text": "#F5F4EF",
+      "accent": "#9ebeff",
+      "secondary": "#7C5CFF",
+      "surface": "#171A22"
+    },
+    "faviconUrl": "",
+    "faviconMediaId": "196db4b0-7184-4033-96f7-ae063fdce757"
+  },
+  "projects": [
+    {
+      "id": "project-dasshu",
+      "name": "Dasshu",
+      "slug": "dasshu",
+      "brand": "Dasshu",
+      "industry": "Agriculture / biological products",
+      "role": "Marketing Ads",
+      "period": "08/2024 — 08/2025",
+      "summary": "Running and optimising agricultural product advertising through customer analysis, message development and seasonal planning with the sales team.",
+      "overview": "At Dasshu, a biological products company, I was responsible for setting up and optimising product advertising campaigns. My work combined customer and market analysis with sales team coordination to plan advertising around changing needs throughout the year.",
+      "challenge": "Agricultural advertising needs to reflect customer needs and seasonal timing. My work required adapting messages to market information and coordinating advertising plans with sales activities.",
+      "objectives": "I focused on planning advertising around customer needs and seasonal sales activities. Market analysis informed how I adjusted messages at different points in the year.",
+      "insights": "",
+      "strategy": "I analysed customers and the market to guide advertising messages. Working with the sales team helped align communication plans with practical customer needs and seasonal sales priorities.",
+      "angles": "",
+      "execution": "- I set up and optimised product advertising campaigns.\n- I analysed customers and the market to adapt advertising messages.\n- I worked with the sales team on seasonal advertising plans.\n- I supported management, team development and training within the marketing team.",
+      "results": "",
+      "learnings": "",
+      "resultsVerified": false,
+      "coverId": "",
+      "category": "Agriculture",
+      "tags": [
+        "Content Strategy",
+        "Meta Ads"
+      ],
+      "seoTitle": "Dasshu — Agricultural Advertising | Nguyễn Hữu Huy",
+      "seoDescription": "My work at Dasshu covered campaign setup and optimisation, customer analysis, message development and seasonal planning with the sales team.",
+      "status": "published",
+      "order": 0
+    },
+    {
+      "id": "project-vnb-global",
+      "name": "VNB Global",
+      "slug": "vnb-global",
+      "brand": "VNB Global",
+      "industry": "F&B · Philippines",
+      "role": "Marketing Ads",
+      "period": "09/2025 — 12/2025",
+      "summary": "Running food product advertising in the Philippines, combining customer analysis with chatbot conversation design.",
+      "overview": "At VNB Global, I helped set up and optimise food product advertising campaigns for the Philippine market. My responsibilities included customer and market analysis, as well as designing chatbot flow diagrams.",
+      "challenge": "The work required understanding customers in a market outside Vietnam and organising suitable conversation flows. I worked on advertising alongside chatbot structures for customer communication.",
+      "objectives": "I focused on understanding customers in the Philippines to inform food product advertising. Alongside campaign work, I designed chatbot conversation flows to support customer communication.",
+      "insights": "",
+      "strategy": "I combined customer and market analysis with advertising implementation. For the chatbot, my role was to map and organise conversation flows for customer interactions.",
+      "angles": "",
+      "execution": "- I analysed customers and the Philippine market.\n- I set up and optimised food product advertising campaigns.\n- I designed chatbot flow diagrams and conversation flows.",
+      "results": "",
+      "learnings": "",
+      "resultsVerified": false,
+      "coverId": "",
+      "category": "F&B",
+      "tags": [
+        "Meta Ads",
+        "Chatbot"
+      ],
+      "seoTitle": "VNB Global — Advertising & Chatbots | Nguyễn Hữu Huy",
+      "seoDescription": "My work at VNB Global covered food product advertising in the Philippines, customer analysis and chatbot conversation design.",
+      "status": "published",
+      "order": 1
+    },
+    {
+      "id": "project-vibio",
+      "name": "VIBIO",
+      "slug": "vibio",
+      "brand": "VIBIO",
+      "industry": "Agriculture",
+      "role": "Creative Ads",
+      "period": "2026",
+      "summary": "Developing advertising ideas, video scripts, visuals and landing page content for the agricultural sector.",
+      "overview": "At VIBIO, I develop creative content for agricultural advertising. My work includes generating ideas, writing video scripts, developing visuals and creating landing page content for campaigns.",
+      "challenge": "",
+      "objectives": "I aim to organise content from the initial idea through advertising touchpoints and landing pages, with clear messaging intended to support conversion.",
+      "insights": "",
+      "strategy": "My creative work spans advertising ideas, video scripts, visuals and landing page content. I focus on clarifying the message across campaign touchpoints.",
+      "angles": "",
+      "execution": "- I develop advertising ideas and content directions.\n- I write video scripts.\n- I develop visual content.\n- I create landing page content.\n- I contribute content to advertising campaigns.",
+      "results": "",
+      "learnings": "",
+      "resultsVerified": false,
+      "coverId": "",
+      "category": "Agriculture",
+      "tags": [
+        "Creative Ads",
+        "Video",
+        "Landing Page"
+      ],
+      "seoTitle": "VIBIO — Agricultural Advertising Creative | Nguyễn Hữu Huy",
+      "seoDescription": "My creative work at VIBIO includes advertising ideas, video scripts, visual content and landing page copy for agricultural campaigns.",
+      "status": "published",
+      "order": 2
+    },
+    {
+      "id": "project-miz-workspace",
+      "name": "MIZ Workspace",
+      "slug": "miz-workspace",
+      "brand": "MIZ Workspace",
+      "industry": "Marketing management system",
+      "role": "Founder & Product Owner",
+      "period": "Personal project",
+      "summary": "Designing and developing an internal marketing management system that brings together campaign data, KPIs and team performance.",
+      "overview": "MIZ Workspace is a project I designed and developed as Founder & Product Owner. The system aims to bring marketing management into one place, helping managers follow campaign data and team activity on a shared platform. It appears in my CV as Workspace MIZ — MKT Performance Management System.",
+      "challenge": "",
+      "objectives": "I aim to connect marketing metrics with team operations, providing a shared place to track revenue, advertising costs, customer data, closed orders and conversion rates.",
+      "insights": "",
+      "strategy": "I designed the system around two areas: campaign data and marketing team activity. Its modules cover KPI dashboards, staff management, advertising data synchronisation and content approval workflows.",
+      "angles": "",
+      "execution": "- I built real-time KPI dashboards covering revenue, advertising costs, customer data, closed orders and conversion rates.\n- I designed attendance tracking, work reporting and marketing staff performance evaluation.\n- I integrated Meta Ads API for automatic advertising data synchronisation.\n- I built KPI rankings, marketing asset management and content approval workflows.",
+      "results": "",
+      "learnings": "",
+      "resultsVerified": false,
+      "coverId": "",
+      "category": "Marketing Tech",
+      "tags": [
+        "Automation",
+        "Analytics"
+      ],
+      "seoTitle": "MIZ Workspace — Marketing Management System | Nguyễn Hữu Huy",
+      "seoDescription": "I designed and developed MIZ Workspace, bringing together campaign KPI dashboards, marketing team management and Meta Ads API integration.",
+      "status": "published",
+      "order": 3
+    }
+  ],
+  "media": []
+}
