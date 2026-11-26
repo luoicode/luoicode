@@ -1,3 +1,4 @@
+document.documentElement.classList.add('js');
 const menu = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#navigation');
 function closeMenu() {
