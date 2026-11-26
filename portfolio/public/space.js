@@ -92,29 +92,36 @@ function initStarfield() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+    if (reducedMotion) renderer.render(scene, camera);
   });
+
+  if (reducedMotion) {
+    renderer.render(scene, camera);
+    return;
+  }
 
   const clock = new THREE.Clock();
-  let running = true;
-  document.addEventListener('visibilitychange', () => {
-    running = !document.hidden;
-    if (running) clock.getDelta();
-  });
-
+  let rafId = 0;
   function animate() {
-    requestAnimationFrame(animate);
-    if (!running) return;
+    rafId = requestAnimationFrame(animate);
     const delta = Math.min(clock.getDelta(), 0.05);
-    if (!reducedMotion) {
-      stars.rotation.x -= delta * 0.055;
-      stars.rotation.y -= delta * 0.085;
-      camera.position.x += (pointerX - camera.position.x) * 0.04;
-      camera.position.y += (-pointerY - camera.position.y) * 0.04;
-      camera.lookAt(0, 0, 0);
-    }
+    stars.rotation.x -= delta * 0.055;
+    stars.rotation.y -= delta * 0.085;
+    camera.position.x += (pointerX - camera.position.x) * 0.04;
+    camera.position.y += (-pointerY - camera.position.y) * 0.04;
+    camera.lookAt(0, 0, 0);
     renderer.render(scene, camera);
   }
-  animate();
+  function syncRun() {
+    if (document.hidden) {
+      if (rafId) { cancelAnimationFrame(rafId); rafId = 0; }
+    } else if (!rafId) {
+      clock.getDelta();
+      animate();
+    }
+  }
+  document.addEventListener('visibilitychange', syncRun);
+  syncRun();
 }
 
 function initHeroGalaxy() {
@@ -253,41 +260,62 @@ function initHeroGalaxy() {
     camera.aspect = r.width / r.height;
     camera.updateProjectionMatrix();
     renderer.setSize(r.width, r.height, false);
+    if (reducedMotion) renderer.render(scene, camera);
   });
   ro.observe(container);
 
-  const clock = new THREE.Clock();
-  let running = true;
-  document.addEventListener('visibilitychange', () => {
-    running = !document.hidden;
-    if (running) clock.getDelta();
-  });
+  if (reducedMotion) {
+    renderer.render(scene, camera);
+    return;
+  }
 
-  function animate() {
-    requestAnimationFrame(animate);
-    if (!running) return;
-    const t = clock.getElapsedTime();
-    if (!reducedMotion) {
-      disk.rotation.y = t * 0.24;
-      shell.rotation.y = -t * 0.22;
-      shell.rotation.x = t * 0.14;
-      ring1.rotation.z = t * 0.32;
-      ring2.rotation.z = -t * 0.24;
-      ring3.rotation.z = t * 0.18;
-      for (const n of nodes) {
-        const a = t * n.speed + n.phase;
-        n.mesh.position.set(
-          Math.cos(a) * n.radius,
-          Math.sin(a * 1.2) * n.tilt,
-          Math.sin(a) * n.radius
-        );
-      }
-      group.rotation.y += (targetX - group.rotation.y) * 0.05;
-      group.rotation.x += (targetY - group.rotation.x) * 0.05;
+  let elapsed = 0;
+  let lastTime = 0;
+  let rafId = 0;
+  let inView = true;
+
+  function animate(now) {
+    rafId = requestAnimationFrame(animate);
+    const dt = lastTime ? Math.min((now - lastTime) / 1000, 0.05) : 0;
+    lastTime = now;
+    elapsed += dt;
+    const t = elapsed;
+    disk.rotation.y = t * 0.24;
+    shell.rotation.y = -t * 0.22;
+    shell.rotation.x = t * 0.14;
+    ring1.rotation.z = t * 0.32;
+    ring2.rotation.z = -t * 0.24;
+    ring3.rotation.z = t * 0.18;
+    for (const n of nodes) {
+      const a = t * n.speed + n.phase;
+      n.mesh.position.set(
+        Math.cos(a) * n.radius,
+        Math.sin(a * 1.2) * n.tilt,
+        Math.sin(a) * n.radius
+      );
     }
+    group.rotation.y += (targetX - group.rotation.y) * 0.05;
+    group.rotation.x += (targetY - group.rotation.x) * 0.05;
     renderer.render(scene, camera);
   }
-  animate();
+
+  function syncRun() {
+    const shouldRun = !document.hidden && inView;
+    if (!shouldRun) {
+      if (rafId) { cancelAnimationFrame(rafId); rafId = 0; lastTime = 0; }
+    } else if (!rafId) {
+      lastTime = 0;
+      rafId = requestAnimationFrame(animate);
+    }
+  }
+
+  const io = new IntersectionObserver(entries => {
+    inView = Boolean(entries[0]?.isIntersecting);
+    syncRun();
+  }, { rootMargin: '80px' });
+  io.observe(container);
+  document.addEventListener('visibilitychange', syncRun);
+  syncRun();
 }
 
 initStarfield();
