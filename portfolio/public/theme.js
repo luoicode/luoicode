@@ -1,6 +1,6 @@
-// Run before paint; dark tech theme is the default.
+// Run before paint; crisp white is the default.
 try {
-  if (localStorage.getItem('huy-portfolio-theme') === 'light') {
-    document.documentElement.dataset.theme = 'light';
+  if (localStorage.getItem('huy-theme-v3') === 'dark') {
+    document.documentElement.dataset.theme = 'dark';
   }
-} catch { /* Dark is the default. */ }
+} catch { /* Light is the default. */ }

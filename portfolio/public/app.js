@@ -49,36 +49,26 @@ document.querySelectorAll('[data-filter]').forEach(button => {
 
 const themeButton = document.querySelector('.theme-toggle');
 function updateThemeButton() {
-  const light = document.documentElement.dataset.theme === 'light';
-  themeButton?.setAttribute('aria-pressed', String(light));
+  const dark = document.documentElement.dataset.theme === 'dark';
+  themeButton?.setAttribute('aria-pressed', String(dark));
   if (themeButton) {
-    themeButton.setAttribute('aria-label', light ? themeButton.dataset.dark : themeButton.dataset.light);
-    themeButton.title = light ? themeButton.dataset.dark : themeButton.dataset.light;
+    themeButton.setAttribute('aria-label', dark ? themeButton.dataset.light : themeButton.dataset.dark);
+    themeButton.title = dark ? themeButton.dataset.light : themeButton.dataset.dark;
   }
 }
 updateThemeButton();
 themeButton?.addEventListener('click', () => {
-  const toLight = document.documentElement.dataset.theme !== 'light';
-  if (toLight) {
-    document.documentElement.dataset.theme = 'light';
+  const toDark = document.documentElement.dataset.theme !== 'dark';
+  if (toDark) {
+    document.documentElement.dataset.theme = 'dark';
   } else {
     delete document.documentElement.dataset.theme;
   }
   try {
-    localStorage.setItem('huy-portfolio-theme', toLight ? 'light' : 'dark');
+    localStorage.setItem('huy-theme-v3', toDark ? 'dark' : 'light');
   } catch { /* Storage is optional. */ }
   updateThemeButton();
 });
-
-if (matchMedia('(pointer: fine)').matches && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  document.querySelectorAll('.spotlight-card').forEach(card => {
-    card.addEventListener('pointermove', event => {
-      const rect = card.getBoundingClientRect();
-      card.style.setProperty('--mx', (event.clientX - rect.left) + 'px');
-      card.style.setProperty('--my', (event.clientY - rect.top) + 'px');
-    });
-  });
-}
 
 document.querySelectorAll('[data-copy]').forEach(button => {
   button.addEventListener('click', async event => {
