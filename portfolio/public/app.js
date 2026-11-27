@@ -19,7 +19,7 @@ nav?.addEventListener('click', event => {
 document.addEventListener('click', event => {
   if (!event.target.closest('.header')) closeMenu();
 });
-matchMedia('(min-width: 821px)').addEventListener('change', event => {
+matchMedia('(min-width: 1025px)').addEventListener('change', event => {
   if (event.matches) closeMenu();
 });
 
