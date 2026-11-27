@@ -108,6 +108,7 @@ lightbox?.addEventListener('close', () => {
 
 document.querySelectorAll('.lightbox-trigger').forEach(trigger => {
   trigger.addEventListener('click', event => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
     if (!lightbox?.showModal || !lightboxImg) return;
     event.preventDefault();
     lastTrigger = trigger;
