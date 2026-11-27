@@ -102,6 +102,7 @@ function closeLightbox() {
 }
 
 lightbox?.addEventListener('close', () => {
+  document.body.style.overflow = '';
   lastTrigger?.focus();
 });
 
@@ -113,6 +114,7 @@ document.querySelectorAll('.lightbox-trigger').forEach(trigger => {
     lightboxImg.src = trigger.dataset.src || trigger.getAttribute('href') || '';
     lightboxImg.alt = trigger.dataset.caption || '';
     if (lightboxCaption) lightboxCaption.textContent = trigger.dataset.caption || '';
+    document.body.style.overflow = 'hidden';
     lightbox.showModal();
     lightboxClose?.focus();
   });
