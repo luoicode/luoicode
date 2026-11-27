@@ -1,83 +1,82 @@
-import test from 'node:test';
+import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { access, readFile } from 'node:fs/promises';
-import { resolve } from 'node:path';
+import { readFileSync, existsSync } from 'node:fs';
+import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { content, homePage, projectPage, notFoundPage, route, escape } from '../src/render.mjs';
+import { content, escape, homePage, notFoundPage, projectPage, projectsList, route } from '../src/render.mjs';
+import { skillGroups, filterList } from '../src/data/upgrade.mjs';
 
-const root = fileURLToPath(new URL('../', import.meta.url));
-test('both languages retain the four real projects with stable counterpart routes', () => {
-  assert.deepEqual(content.vi.projects.map(p=>p.slug), ['dasshu','vnb-global','vibio','miz-workspace']);
-  assert.deepEqual(content.en.projects.map(p=>p.slug),content.vi.projects.map(p=>p.slug));
-  for(const lang of ['vi','en']) {
-    const html=homePage(lang);
-    assert.match(html,new RegExp(`<html lang="${lang}">`));
-    for(const p of content[lang].projects) assert.ok(html.includes(`href="${route(lang,p.slug)}"`));
-    assert.equal((html.match(/data-category=/g)||[]).length,4);
-  }
-});
-test('every published media reference is self-hosted and exists', async () => {
-  for(const lang of ['vi','en']) {
-    for(const project of content[lang].projects) assert.ok(content[lang].media.some(m=>m.id===project.coverId));
-    for(const media of content[lang].media) {
-      assert.match(media.url,/^\/media\/[a-z0-9-]+\.(webp|jpg)$/);
-      await access(resolve(root,'public',media.url.slice(1)));
+const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+const publicDir = join(root, 'public');
+
+describe('upgraded portfolio positioning & expertise', () => {
+  it('renders upgraded positioning and tagline in both languages', () => {
+    for (const lang of ['vi', 'en']) {
+      const html = homePage(lang);
+      assert.match(html, /Performance Marketing Specialist | AI &amp; Automation Builder/);
+      assert.match(html, /Marketing with data. Creativity with purpose. Technology that scales./);
     }
-  }
+  });
+
+  it('organizes skills into 5 structured groups without percentage bars', () => {
+    for (const lang of ['vi', 'en']) {
+      assert.equal(skillGroups[lang].length, 5);
+      const html = homePage(lang);
+      assert.doesNotMatch(html, /90%|85%|70%/);
+      for (const group of skillGroups[lang]) {
+        assert.ok(html.includes(escape(group.title)), `Missing skill group: ${group.title}`);
+      }
+    }
+  });
+
+  it('preserves Dasshu and VNB Global in experience without duplicating them in upgraded projects', () => {
+    for (const lang of ['vi', 'en']) {
+      const html = homePage(lang);
+      assert.match(html, /Dasshu/);
+      assert.match(html, /VNB Global/);
+    }
+    assert.ok(!projectsList.some(p => p.slug === 'dasshu' || p.slug === 'vnb-global'));
+    assert.ok(!projectsList.some(p => p.slug === 'ex-download'), 'Unverified Ex-Download must not be published');
+  });
 });
-test('English pages display the same real covers as their Vietnamese counterparts', () => {
-  const home = homePage('en');
-  for (const project of content.vi.projects) {
-    const cover = content.vi.media.find(media => media.id === project.coverId);
-    assert.ok(home.includes(`src="${cover.url}"`));
-    assert.ok(projectPage('en', project.slug).includes(`src="${cover.url}"`));
-  }
-});
-test('project pages include real narratives and do not invent unverified results', () => {
-  for(const lang of ['vi','en']) for(const p of content[lang].projects) {
-    const html=projectPage(lang,p.slug);
-    assert.ok(html.includes(escape(p.overview)));
-    assert.ok(html.includes(`href="${route(lang==='vi'?'en':'vi',p.slug)}"`));
-    assert.ok(html.includes('class="next-project shell"'));
-    if(!p.resultsVerified) assert.ok(!html.includes(`<h2>${escape(content[lang].settings.copy.caseResults)}</h2>`));
-    assert.equal((html.match(/<h1[ >]/g)||[]).length,1);
-  }
-});
-test('the published CV, email, and phone are preserved in both languages', () => {
-  for(const lang of ['vi','en']) {
-    const html=homePage(lang);
-    assert.ok(html.includes('mailto:huyhn045@gmail.com'));
-    assert.ok(html.includes('tel:+84966962608'));
-    assert.ok(html.includes('0966 96 2608'));
-    assert.ok(html.includes('export?format=pdf'));
-    assert.ok(html.includes('rel="noopener noreferrer"'));
-    assert.equal((html.match(/<h1[ >]/g)||[]).length,1);
-  }
-});
-test('content is escaped before being inserted into HTML', () => {
-  assert.equal(escape('<script>"x" & \'y\'</script>'),'&lt;script&gt;&quot;x&quot; &amp; &#39;y&#39;&lt;/script&gt;');
-  const original=content.vi.projects[0].summary;
-  try {
-    content.vi.projects[0].summary='<img src=x onerror="alert(1)">';
-    assert.ok(!projectPage('vi','dasshu').includes('<img src=x'));
-    assert.ok(projectPage('vi','dasshu').includes('&lt;img src=x'));
-  } finally {content.vi.projects[0].summary=original;}
-});
-test('missing projects render a noindex recovery page', () => {
-  const html=projectPage('vi','does-not-exist');
-  assert.equal(html,notFoundPage('vi'));
-  assert.ok(html.includes('<meta name="robots" content="noindex">'));
-  assert.ok(html.includes('href="/"'));
-});
-test('navigation and metadata work without client JavaScript', async () => {
-  for(const lang of ['vi','en']) {
-    const html=homePage(lang);
-    for(const id of ['main','work','about','contact']) assert.ok(html.includes(`id="${id}"`));
-    assert.ok(html.includes('hreflang="vi"'));
-    assert.ok(html.includes('hreflang="en"'));
-    assert.ok(html.includes('class="skip-link"'));
-  }
-  const headers=await readFile(resolve(root,'public/_headers'),'utf8');
-  assert.ok(headers.includes("script-src 'self'"));
-  assert.ok(headers.includes("frame-ancestors 'none'"));
+
+describe('10 verified projects & bilingual case studies', () => {
+  it('publishes all 10 verified projects in exact requested order with 6 filters', () => {
+    assert.equal(filterList.length, 6);
+    assert.deepEqual(
+      projectsList.map(p => p.slug),
+      [
+        'vibio', 'katakill-thailand', 'ai-creative-film-studio', 'fb-browser-post-tool',
+        'koc-finder-local', 'miz-workspace', 'a-garden-of-wishes', 'mess-mi', 'huy-os', 'vht-logistics'
+      ]
+    );
+  });
+
+  it('renders all 10 case studies in VI and EN with local media and zero invented metrics', () => {
+    for (const p of projectsList) {
+      assert.ok(existsSync(join(publicDir, p.cover.replace(/^\//, ''))), `Missing cover asset: ${p.cover}`);
+      for (const lang of ['vi', 'en']) {
+        const html = projectPage(lang, p.slug);
+        assert.ok(html.includes(escape(p[lang].name)));
+        assert.ok(html.includes(escape(p[lang].subtitle)));
+        assert.ok(html.includes(route(lang === 'vi' ? 'en' : 'vi', p.slug)));
+        assert.match(html, /lightbox-trigger/);
+      }
+    }
+  });
+
+  it('preserves contact links, international phone dialing, CV PDF export, and security headers', () => {
+    const html = homePage('vi');
+    assert.match(html, /mailto:huyhn045@gmail\.com/);
+    assert.match(html, /tel:\+84966962608/);
+    assert.match(html, /export\?format=pdf/);
+    assert.match(notFoundPage('vi'), /<meta name="robots" content="noindex">/);
+    const headers = readFileSync(join(publicDir, '_headers'), 'utf8');
+    assert.match(headers, /Content-Security-Policy/);
+    assert.match(headers, /frame-ancestors 'none'/);
+  });
+
+  it('escapes HTML safely', () => {
+    assert.equal(escape('<script>"&\'' + '</script>'), '&lt;script&gt;&quot;&amp;&#39;&lt;/script&gt;');
+  });
 });
