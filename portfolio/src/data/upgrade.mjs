@@ -451,7 +451,7 @@ export const upgradedProjects = [
       "performance-marketing",
       "ai-creative"
     ],
-    "cover": "/media/mock-katakill.svg",
+    "cover": "/media/ai-katakill-thailand.webp",
     "coverType": "concept",
     "timeline": "2026",
     "stack": [
@@ -517,7 +517,7 @@ export const upgradedProjects = [
       "ai-creative",
       "product-development"
     ],
-    "cover": "/media/mock-film-studio.svg",
+    "cover": "/media/ai-creative-film-studio.webp",
     "coverType": "concept",
     "timeline": "2026 · v4.3.0 READY",
     "stack": [
@@ -581,7 +581,7 @@ export const upgradedProjects = [
       "automation",
       "product-development"
     ],
-    "cover": "/media/mock-fb-post.svg",
+    "cover": "/media/ai-fb-browser-post-tool.webp",
     "coverType": "concept",
     "timeline": "2026 · 6/6 Verified",
     "stack": [
@@ -643,7 +643,7 @@ export const upgradedProjects = [
       "automation",
       "product-development"
     ],
-    "cover": "/media/mock-koc-finder.svg",
+    "cover": "/media/ai-koc-finder-local.webp",
     "coverType": "concept",
     "timeline": "2026 · TAP LIVE Verified",
     "stack": [
@@ -764,137 +764,13 @@ export const upgradedProjects = [
     }
   },
   {
-    "slug": "a-garden-of-wishes",
-    "featured": false,
-    "filters": [
-      "ai-creative",
-      "web-applications"
-    ],
-    "cover": "/media/mock-garden.svg",
-    "coverType": "concept",
-    "timeline": "2026 · Phases 0–6 Done",
-    "stack": [
-      "Three.js r128",
-      "Vite",
-      "Cloudflare Pages",
-      "Cloudflare D1",
-      "Google Apps Script"
-    ],
-    "vi": {
-      "name": "A Garden of Wishes",
-      "subtitle": "Interactive 3D Digital Greeting Experience",
-      "category": "Creative Technology / Web Development",
-      "role": "Product Creator / Creative Developer",
-      "summary": "Trải nghiệm thiệp chúc mừng kỹ thuật số 3D tương tác bằng Three.js, mô phỏng hoa sinh trưởng 18 giây, cá nhân hóa hạt giống và lưu trữ trên Cloudflare D1.",
-      "overview": "A Garden of Wishes là trải nghiệm thiệp chúc mừng kỹ thuật số tương tác 3D, nơi người dùng có thể tạo ra một khu vườn hoa mang thông điệp và cảm xúc cá nhân.\nDự án kết hợp công nghệ đồ họa 3D với trải nghiệm cá nhân hóa, tạo nên một hình thức gửi lời chúc khác biệt so với thiệp điện tử thông thường.",
-      "challenge": "Thiệp điện tử truyền thống thường tĩnh và thiếu chiều sâu cảm xúc.\nBài toán là biến một lời chúc đơn giản thành không gian tương tác giàu cảm xúc nhưng vẫn tải mượt trên web và dễ chia sẻ đa nền tảng.",
-      "objectives": "- Tạo trải nghiệm khu vườn 3D tương tác với hiệu ứng hoa sinh trưởng tự nhiên.\n- Cá nhân hóa hạt giống theo tên, tháng sinh, cảm xúc và 3 chủ đề ánh sáng (ban ngày, hoàng hôn, ban đêm).\n- Tích hợp chia sẻ shortlink, gửi email và bảo vệ dữ liệu trên hạ tầng Cloudflare.",
-      "strategy": "- Sử dụng Three.js r128 và Vite để tối ưu hiệu năng đồ họa 3D trên trình duyệt.\n- Kết hợp Cloudflare Pages, Cloudflare D1 và Google Apps Script cho luồng lưu thiệp, tạo shortlink và gửi email.",
-      "execution": "- Xây dựng hoạt ảnh hoa sinh trưởng khoảng 18 giây, 3 theme ánh sáng, luồng Gieo hạt, Xem thiệp và Tặng thêm một khu vườn.\n- Triển khai chia sẻ đa nền tảng, tạo shortlink, gửi email, quản lý dữ liệu D1 và lớp bảo vệ/giới hạn truy cập QA.",
-      "deliverables": [
-        "18s 3D Flower Growth Animation",
-        "Interactive 3D Garden (Day / Sunset / Night)",
-        "Personalized Seeds (Name, Birth Month, Emotion)",
-        "Plant Seed, View Card & Gift-a-Garden Flows",
-        "Shortlink & Multi-platform Sharing",
-        "Email Integration & Cloudflare D1 Data Layer"
-      ],
-      "outcome": "Giai đoạn Production 0–6 đã hoàn thành; giai đoạn QA Preview cùng cơ chế bảo vệ và giới hạn truy cập đang tiếp tục được phát triển.",
-      "galleryCaption": "Minh họa trải nghiệm khu vườn 3D A Garden of Wishes (Concept Preview)."
-    },
-    "en": {
-      "name": "A Garden of Wishes",
-      "subtitle": "Interactive 3D Digital Greeting Experience",
-      "category": "Creative Technology / Web Development",
-      "role": "Product Creator / Creative Developer",
-      "summary": "Interactive 3D digital greeting experience built with Three.js r128 and Cloudflare D1 featuring an 18-second flower growth animation and personalized seeds.",
-      "overview": "A Garden of Wishes is an interactive 3D digital greeting experience that allows users to create personalized virtual flower gardens with meaningful messages.\nThe project combines 3D graphics, storytelling, and personalized interactions to create a more engaging alternative to traditional digital greeting cards.",
-      "challenge": "Traditional digital greeting cards feel static and forgettable.\nThe goal was to turn a simple message into an emotional 3D experience that remains fast, interactive, and easy to share.",
-      "objectives": "- Build an interactive 3D garden with a smooth ~18-second flower growth animation.\n- Personalize seeds by recipient name, birth month, emotion, and time-of-day lighting.\n- Support shortlinks, email delivery, and Cloudflare D1 persistence.",
-      "strategy": "- Paired Three.js r128 and Vite for responsive WebGL visuals.\n- Used Cloudflare Pages, Cloudflare D1, and Google Apps Script for data storage, shortlinks, and email integration.",
-      "execution": "- Implemented daytime/sunset/nighttime themes, seed planting, card viewing, and gifting another garden.\n- Added multi-platform sharing, shortlinks, email delivery, and QA access protection / rate-limiting preparation.",
-      "deliverables": [
-        "18s 3D Flower Growth Animation",
-        "Interactive 3D Garden (Day / Sunset / Night)",
-        "Personalized Seeds (Name, Birth Month, Emotion)",
-        "Plant Seed, View Card & Gift-a-Garden Flows",
-        "Shortlink & Multi-platform Sharing",
-        "Email Integration & Cloudflare D1 Data Layer"
-      ],
-      "outcome": "Production phases 0–6 completed, with QA Preview and access protection / rate-limiting development continuing.",
-      "galleryCaption": "A Garden of Wishes 3D interactive concept preview (Concept Preview)."
-    }
-  },
-  {
-    "slug": "mess-mi",
-    "featured": false,
-    "filters": [
-      "automation",
-      "product-development"
-    ],
-    "cover": "/media/mock-mess-mi.svg",
-    "coverType": "concept",
-    "timeline": "2026 · Active Development",
-    "stack": [
-      "Multi-channel Inbox",
-      "Messenger Integration",
-      "YouTube Research",
-      "Status Tracking",
-      "Workflow Design"
-    ],
-    "vi": {
-      "name": "MESS-mi",
-      "subtitle": "Multi-platform Communication Management",
-      "category": "Communication Technology / Automation",
-      "role": "Product Concept & Development",
-      "summary": "Nền tảng tập trung quản lý hội thoại và tương tác đa kênh, hỗ trợ tích hợp Messenger, theo dõi trạng thái xử lý và nghiên cứu mở rộng YouTube.",
-      "overview": "MESS-mi là dự án phát triển nền tảng hỗ trợ quản lý và tích hợp các kênh giao tiếp số.\nMục tiêu là xây dựng một không gian tập trung để quản lý hội thoại và tương tác từ nhiều nền tảng, giảm tình trạng phân tán khi vận hành nhiều kênh truyền thông.",
-      "challenge": "Khi quản lý nhiều kênh giao tiếp, người vận hành phải chuyển đổi liên tục giữa các nền tảng.\nĐiều này khiến việc theo dõi hội thoại, trạng thái xử lý và duy trì quy trình chăm sóc khách hàng trở nên phức tạp.",
-      "objectives": "- Gom hội thoại từ các nguồn giao tiếp về một giao diện quản lý thống nhất.\n- Theo dõi rõ trạng thái xử lý và tổ chức phân loại kênh hiệu quả.\n- Tạo nền tảng mở rộng các workflow tự động hóa trong tương lai.",
-      "strategy": "- Thiết kế luồng vận hành xoay quanh trải nghiệm người trực tin nhắn thay vì sao chép nguyên giao diện từng nền tảng.\n- Triển khai theo từng giai đoạn tích hợp, tách bạch rõ kênh hỗ trợ hiện tại và kênh đang nghiên cứu.",
-      "execution": "- Xây dựng giao diện quản lý hội thoại tập trung, tổ chức nguồn giao tiếp và theo dõi trạng thái xử lý.\n- Hỗ trợ tích hợp Messenger và tiến hành nghiên cứu tích hợp tương tác từ YouTube.",
-      "deliverables": [
-        "Centralized Conversation Management",
-        "Multi-channel Organization",
-        "Interaction Status Tracking",
-        "Messenger Integration",
-        "YouTube Interaction Research",
-        "Unified Operator Interface"
-      ],
-      "outcome": "Trạng thái minh bạch: giao diện quản lý tập trung và hỗ trợ tích hợp Messenger đang phát triển/thử nghiệm; tích hợp tương tác YouTube đang ở giai đoạn nghiên cứu; chưa tuyên bố kết nối LIVE toàn bộ các kênh.",
-      "galleryCaption": "Minh họa giao diện quản lý hội thoại đa kênh MESS-mi (Concept Preview)."
-    },
-    "en": {
-      "name": "MESS-mi",
-      "subtitle": "Multi-platform Communication Management",
-      "category": "Communication Technology / Automation",
-      "role": "Product Concept & Development",
-      "summary": "Multi-platform communication workspace focused on centralized conversation tracking, Messenger integration, and YouTube interaction research.",
-      "overview": "MESS-mi is a multi-platform communication management project focused on bringing digital conversations and interactions into a more centralized workspace.",
-      "challenge": "Managing multiple communication platforms requires constant context switching and makes conversation tracking increasingly complex.",
-      "objectives": "- Centralize conversations and interaction sources in one operator-focused workspace.\n- Track handling statuses clearly across channels.\n- Prepare an extensible foundation for future automation workflows.",
-      "strategy": "- Designed around operator workflow speed and unified conversation state.\n- Phased channel integrations clearly between active implementation and research.",
-      "execution": "- Built unified multi-channel inbox structure, channel organization, and status tracking.\n- Implemented Messenger integration support while researching YouTube interaction ingestion.",
-      "deliverables": [
-        "Centralized Conversation Management",
-        "Multi-channel Organization",
-        "Interaction Status Tracking",
-        "Messenger Integration",
-        "YouTube Interaction Research",
-        "Unified Operator Interface"
-      ],
-      "outcome": "Transparent integration status: Messenger integration is in active development/testing; YouTube interaction integration is in the research phase; full multi-channel LIVE coverage is not claimed.",
-      "galleryCaption": "MESS-mi multi-channel inbox architecture (Concept Preview)."
-    }
-  },
-  {
     "slug": "huy-os",
     "featured": false,
     "filters": [
       "ai-creative",
       "product-development"
     ],
-    "cover": "/media/mock-huy-os.svg",
+    "cover": "/media/ai-huy-os.webp",
     "coverType": "concept",
     "timeline": "2026 · Concept & Modular Build",
     "stack": [
@@ -946,70 +822,6 @@ export const upgradedProjects = [
       ],
       "outcome": "Active product concept and modular architecture phase; planned capabilities and concepts are clearly distinguished from shipped modules.",
       "galleryCaption": "HUY OS modular AI-first desktop vision (Concept Preview)."
-    }
-  },
-  {
-    "slug": "vht-logistics",
-    "featured": false,
-    "filters": [
-      "web-applications",
-      "product-development"
-    ],
-    "cover": "/media/mock-vht-logistics.svg",
-    "coverType": "concept",
-    "timeline": "2026 · Verified Source",
-    "stack": [
-      "TanStack Start",
-      "React 19",
-      "TypeScript",
-      "Vite",
-      "Supabase Auth & RLS",
-      "Tailwind CSS",
-      "ExcelJS"
-    ],
-    "vi": {
-      "name": "VHT Logistics",
-      "subtitle": "Shipment Tracking & Admin Operations Portal",
-      "category": "Web Application / Business Management",
-      "role": "Product Development & Architecture",
-      "summary": "Hệ thống tra cứu vận đơn công khai, cổng khách hàng và trang quản trị vận hành Logistics xây dựng với TanStack Start, React, TypeScript và Supabase RLS (đã xác minh từ source code).",
-      "overview": "VHT Logistics là nền tảng quản lý và tra cứu vận đơn (Shipment Tracking Management System) được xây dựng trên TanStack Start, React, Vite và Supabase — xác minh trực tiếp từ repository `luoicode/VHT-Logistics`.\nHệ thống phục vụ hai vai trò tinh gọn: Admin quản lý dữ liệu vận đơn và Customer tra cứu trạng thái kiện hàng.",
-      "challenge": "Các hệ thống quản lý vận đơn truyền thống thường nặng nề, rối mắt và thiếu cơ chế phân quyền dữ liệu an toàn giữa quản trị viên với từng mã khách hàng.",
-      "objectives": "- Xây dựng giao diện tra cứu vận đơn công khai và cổng khách hàng tối giản, hiện đại.\n- Cung cấp bảng quản trị vận đơn chuyên sâu cho Admin: lọc nâng cao, tùy biến cột, sửa trạng thái trực tiếp và nhập/xuất Excel.\n- Đảm bảo bảo mật xác thực và phân quyền dữ liệu bằng Supabase Auth + Row Level Security (RLS).",
-      "strategy": "- Chọn kiến trúc SSR hiện đại với TanStack Start + React 19 + TypeScript + Tailwind CSS v4.\n- Tách bạch rõ luồng xác thực Admin/Customer, hỗ trợ kích hoạt tài khoản khách hàng theo mã và chuẩn bị sẵn sàng cho hạ tầng Supabase độc lập.",
-      "execution": "- Triển khai tra cứu vận đơn công khai, Customer Portal và Admin Operations Portal.\n- Xây dựng bộ lọc vận đơn nâng cao, cấu hình cột bảng, thao tác hàng loạt, chỉnh sửa trạng thái inline và import/export Excel bằng ExcelJS.\n- Hoàn tất kiểm tra bảo mật qua các giai đoạn Security Phase 1–3 và rà soát trước triển khai.",
-      "deliverables": [
-        "Public Shipment Tracking",
-        "Customer Portal & Account Activation Flow",
-        "Admin Shipment Management & Inline Status Edit",
-        "Advanced Filters & Customizable Table Columns",
-        "Excel Import / Export (ExcelJS)",
-        "Supabase Auth & RLS Data Isolation"
-      ],
-      "outcome": "Đã xác minh từ source code thực tế (`luoicode/VHT-Logistics`): hoàn thành các giai đoạn bảo mật Phase 1–3 và pre-deployment review, sẵn sàng triển khai Node SSR cùng dự án Supabase của khách hàng.",
-      "galleryCaption": "Minh họa hệ thống tra cứu & quản trị vận đơn VHT Logistics (dựa trên cấu trúc source code thực tế)."
-    },
-    "en": {
-      "name": "VHT Logistics",
-      "subtitle": "Shipment Tracking & Admin Operations Portal",
-      "category": "Web Application / Business Management",
-      "role": "Product Development & Architecture",
-      "summary": "Shipment tracking portal and admin operations web app built with TanStack Start, React 19, TypeScript, and Supabase Auth/RLS (verified directly from source code).",
-      "overview": "VHT Logistics is a Shipment Tracking Management System built with TanStack Start, React, Vite, and Supabase — verified directly from the `luoicode/VHT-Logistics` repository.\nIt centers on two streamlined roles: Admin operators managing shipments and Customers tracking shipment status.",
-      "challenge": "Legacy logistics tracking portals are cluttered and often lack strict row-level data isolation between administrators and individual customer accounts.",
-      "objectives": "- Deliver a clean public tracking lookup and dedicated customer portal.\n- Equip admins with advanced filtering, customizable columns, inline status updates, bulk actions, and Excel import/export.\n- Enforce authentication and data isolation via Supabase Auth and RLS.",
-      "strategy": "- Built on TanStack Start SSR, React 19, TypeScript, and Tailwind CSS v4.\n- Separated admin and customer authentication/activation flows and prepared deployment for client-owned Supabase and Node SSR hosting.",
-      "execution": "- Implemented public tracking, customer portal, admin shipment table with customizable columns, inline status editing, and ExcelJS import/export.\n- Completed Security Audit Phases 1–3 and pre-deployment readiness review.",
-      "deliverables": [
-        "Public Shipment Tracking",
-        "Customer Portal & Account Activation Flow",
-        "Admin Shipment Management & Inline Status Edit",
-        "Advanced Filters & Customizable Table Columns",
-        "Excel Import / Export (ExcelJS)",
-        "Supabase Auth & RLS Data Isolation"
-      ],
-      "outcome": "Verified directly from source (`luoicode/VHT-Logistics`): Security Phases 1–3 and pre-deployment review completed; prepared for client-owned Supabase and Node SSR deployment.",
-      "galleryCaption": "VHT Logistics tracking & admin operations preview (grounded in verified repository architecture)."
     }
   }
 ];

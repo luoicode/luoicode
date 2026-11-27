@@ -40,19 +40,19 @@ describe('upgraded portfolio positioning & expertise', () => {
   });
 });
 
-describe('10 verified projects & bilingual case studies', () => {
-  it('publishes all 10 verified projects in exact requested order with 6 filters', () => {
+describe('7 flagship projects & bilingual case studies', () => {
+  it('publishes the 7 selected projects in exact order with 6 filters', () => {
     assert.equal(filterList.length, 6);
     assert.deepEqual(
       projectsList.map(p => p.slug),
       [
         'vibio', 'katakill-thailand', 'ai-creative-film-studio', 'fb-browser-post-tool',
-        'koc-finder-local', 'miz-workspace', 'a-garden-of-wishes', 'mess-mi', 'huy-os', 'vht-logistics'
+        'koc-finder-local', 'miz-workspace', 'huy-os'
       ]
     );
   });
 
-  it('renders all 10 case studies in VI and EN with local media and zero invented metrics', () => {
+  it('renders all 7 case studies in VI and EN with local media and zero invented metrics', () => {
     for (const p of projectsList) {
       assert.ok(existsSync(join(publicDir, p.cover.replace(/^\//, ''))), `Missing cover asset: ${p.cover}`);
       for (const lang of ['vi', 'en']) {
