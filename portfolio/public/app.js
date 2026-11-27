@@ -89,7 +89,7 @@ if (sections.length && navLinks.length && 'IntersectionObserver' in window) {
   sections.forEach(sec => navObserver.observe(sec));
 }
 
-// Gallery lightbox
+// Gallery lightbox (native <dialog> traps focus & handles Escape automatically)
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
 const lightboxCaption = document.getElementById('lightbox-caption');
@@ -97,21 +97,23 @@ const lightboxClose = document.querySelector('.lightbox-close');
 let lastTrigger = null;
 
 function closeLightbox() {
-  if (!lightbox || lightbox.hidden) return;
-  lightbox.hidden = true;
-  document.body.style.overflow = '';
-  lastTrigger?.focus();
+  if (!lightbox?.open) return;
+  lightbox.close();
 }
 
+lightbox?.addEventListener('close', () => {
+  lastTrigger?.focus();
+});
+
 document.querySelectorAll('.lightbox-trigger').forEach(trigger => {
-  trigger.addEventListener('click', () => {
-    if (!lightbox || !lightboxImg) return;
+  trigger.addEventListener('click', event => {
+    if (!lightbox?.showModal || !lightboxImg) return;
+    event.preventDefault();
     lastTrigger = trigger;
-    lightboxImg.src = trigger.dataset.src || '';
+    lightboxImg.src = trigger.dataset.src || trigger.getAttribute('href') || '';
     lightboxImg.alt = trigger.dataset.caption || '';
     if (lightboxCaption) lightboxCaption.textContent = trigger.dataset.caption || '';
-    lightbox.hidden = false;
-    document.body.style.overflow = 'hidden';
+    lightbox.showModal();
     lightboxClose?.focus();
   });
 });
@@ -122,15 +124,9 @@ lightbox?.addEventListener('click', event => {
 });
 
 document.addEventListener('keydown', event => {
-  if (event.key === 'Escape') {
-    if (lightbox && !lightbox.hidden) {
-      closeLightbox();
-      return;
-    }
-    if (menu?.getAttribute('aria-expanded') === 'true') {
-      closeMenu();
-      menu.focus();
-    }
+  if (event.key === 'Escape' && menu?.getAttribute('aria-expanded') === 'true') {
+    closeMenu();
+    menu.focus();
   }
 });
 

@@ -154,13 +154,13 @@ function footer(lang) {
     </div>
   </div>
 </footer>
-<div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="${lang === 'vi' ? 'Xem ảnh lớn' : 'Expanded image'}">
+<dialog id="lightbox" class="lightbox" aria-label="${lang === 'vi' ? 'Xem ảnh lớn' : 'Expanded image'}">
   <button type="button" class="lightbox-close" aria-label="${t.close}">×</button>
   <figure class="lightbox-figure">
     <img id="lightbox-img" src="" alt="">
     <figcaption id="lightbox-caption"></figcaption>
   </figure>
-</div>`;
+</dialog>`;
 }
 
 function projectCard(p, i, lang) {
@@ -334,12 +334,12 @@ export function projectPage(lang, slug) {
       <div class="cosmic-panel meta-box"><span>${t.category}</span><strong>${e(loc.category)}</strong></div>
       <div class="cosmic-panel meta-box"><span>${t.timeline}</span><strong>${e(p.timeline)}</strong></div>
     </div>
-    <button type="button" class="case-cover lightbox-trigger" data-src="${e(p.cover)}" data-caption="${e(loc.galleryCaption)}" aria-label="${t.zoomHint}: ${e(loc.name)}">
+    <a href="${e(p.cover)}" target="_blank" rel="noopener noreferrer" class="case-cover lightbox-trigger" data-src="${e(p.cover)}" data-caption="${e(loc.galleryCaption)}" aria-label="${t.zoomHint}: ${e(loc.name)}">
       <div class="stage-media ${p.coverType === 'concept' ? 'is-mockup' : ''}">
         <img src="${e(p.cover)}" alt="${e(loc.name)} — ${e(loc.subtitle)}" width="960" height="600">
       </div>
       <span class="zoom-pill">${t.zoomHint} ↗</span>
-    </button>
+    </a>
   </section>
 
   <div class="case-body shell">
@@ -359,10 +359,10 @@ export function projectPage(lang, slug) {
     <section class="case-section">
       <div class="case-section-label"><span>09</span><h2>${t.secGallery}</h2></div>
       <div class="case-section-copy">
-        <button type="button" class="gallery-card lightbox-trigger" data-src="${e(p.cover)}" data-caption="${e(loc.galleryCaption)}">
+        <a href="${e(p.cover)}" target="_blank" rel="noopener noreferrer" class="gallery-card lightbox-trigger" data-src="${e(p.cover)}" data-caption="${e(loc.galleryCaption)}">
           <img src="${e(p.cover)}" alt="${e(loc.galleryCaption)}" loading="lazy">
           <span>${e(loc.galleryCaption)} · <strong>${t.zoomHint}</strong></span>
-        </button>
+        </a>
       </div>
     </section>
   </div>
