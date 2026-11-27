@@ -1,0 +1,600 @@
+{
+  "settings": {
+    "pageLayout": {
+      "version": 1,
+      "pendingMediaIds": [],
+      "blocks": [
+        {
+          "id": "hero",
+          "kind": "hero"
+        },
+        {
+          "id": "marquee",
+          "kind": "marquee"
+        },
+        {
+          "id": "work",
+          "kind": "work"
+        },
+        {
+          "id": "about",
+          "kind": "about"
+        },
+        {
+          "id": "expertise",
+          "kind": "expertise"
+        },
+        {
+          "id": "process",
+          "kind": "process"
+        },
+        {
+          "id": "contact",
+          "kind": "contact"
+        }
+      ]
+    },
+    "reviewRequired": false,
+    "faviconRevision": "6f14686b-2475-4d15-ad83-4eec2b07fa47",
+    "faviconUrl": "",
+    "faviconMediaId": "196db4b0-7184-4033-96f7-ae063fdce757",
+    "name": "Nguyễn Hữu Huy",
+    "title": "Sáng tạo nội dung & quảng cáo hướng đến hiệu quả",
+    "location": "Hà Đông, Hà Nội",
+    "email": "huyhn045@gmail.com",
+    "phone": "0966 96 2608",
+    "heroLine1": "TƯ DUY SÁNG TẠO.",
+    "heroLine2": "HIỆU QUẢ THỰC TẾ.",
+    "intro": "Biến thấu hiểu khách hàng thành ý tưởng. Biến ý tưởng thành nội dung có sức thuyết phục. Tôi kết nối tư duy sáng tạo và dữ liệu để xây dựng quảng cáo hướng đến chuyển đổi.",
+    "about": "Tôi là Huy — làm nội dung và tiếp thị hướng đến hiệu quả, với sự tò mò về con người và cách họ ra quyết định. Từ nghiên cứu khách hàng, phát triển thông điệp bán hàng đến kịch bản video và tối ưu trang đích, tôi theo đuổi những nội dung có mục đích rõ ràng, được kiểm chứng bằng dữ liệu.",
+    "availability": "Sẵn sàng nhận dự án tự do",
+    "cvUrl": "https://docs.google.com/document/d/1VmkTP-wzL93I2Vb7ISvScsvmuXokan4qP_4vlI8qjPo/edit",
+    "facebookUrl": "",
+    "zaloUrl": "",
+    "profileId": "196db4b0-7184-4033-96f7-ae063fdce757",
+    "heroId": "",
+    "skills": [
+      "Chiến lược nội dung",
+      "Sáng tạo quảng cáo",
+      "Biên kịch video",
+      "Meta Ads",
+      "TikTok Ads",
+      "Sản xuất nội dung với AI",
+      "Tối ưu trang đích",
+      "Phân tích tiếp thị"
+    ],
+    "experience": [
+      {
+        "company": "VIBIO",
+        "period": "2026",
+        "role": "Sáng tạo quảng cáo · Nông nghiệp",
+        "description": "Phát triển ý tưởng nội dung, kịch bản video, hình ảnh, trang đích và chiến dịch quảng cáo."
+      },
+      {
+        "company": "VNB Global",
+        "period": "09/2025 — 12/2025",
+        "role": "Quảng cáo · Ẩm thực tại Philippines",
+        "description": "Phân tích khách hàng, thị trường; triển khai quảng cáo và xây dựng chatbot."
+      },
+      {
+        "company": "Dasshu",
+        "period": "08/2024 — 08/2025",
+        "role": "Quảng cáo · Nông nghiệp",
+        "description": "Nghiên cứu khách hàng, xây dựng thông điệp quảng cáo; tham gia sản xuất nội dung và tối ưu chiến dịch."
+      }
+    ],
+    "process": [
+      {
+        "name": "Nghiên cứu",
+        "description": "Lắng nghe khách hàng, tìm hiểu ngành hàng và xác định bài toán cần giải quyết."
+      },
+      {
+        "name": "Lên ý tưởng",
+        "description": "Chuyển thấu hiểu khách hàng thành thông điệp, góc tiếp cận và ý tưởng sáng tạo."
+      },
+      {
+        "name": "Viết kịch bản",
+        "description": "Phát triển điểm thu hút, cấu trúc câu chuyện và lời kêu gọi hành động."
+      },
+      {
+        "name": "Sản xuất nội dung",
+        "description": "Phối hợp hình ảnh, video và công cụ AI để triển khai ý tưởng."
+      },
+      {
+        "name": "Kiểm thử",
+        "description": "Kiểm thử các biến thể nội dung theo giả thuyết và mục tiêu cụ thể."
+      },
+      {
+        "name": "Tối ưu",
+        "description": "Đọc dữ liệu, rút ra bài học và tiếp tục cải thiện."
+      }
+    ],
+    "contactHeadline": "CÙNG TẠO NỘI DUNG THÚC ĐẨY CHUYỂN ĐỔI.",
+    "footer": "Sáng tạo độc lập. Tác động có chủ đích.",
+    "seoTitle": "Nguyễn Hữu Huy — Sáng tạo nội dung & quảng cáo",
+    "seoDescription": "Hồ sơ năng lực của Nguyễn Hữu Huy: chiến lược nội dung, sáng tạo quảng cáo, video, trang đích và tự động hóa tiếp thị.",
+    "ogImage": "",
+    "copy": {
+      "brand": "HUY",
+      "brandNote": "HỒ SƠ SÁNG TẠO",
+      "navWork": "Dự án tiêu biểu",
+      "navAbout": "Về tôi",
+      "navContact": "Liên hệ hợp tác",
+      "heroLocation": "HÀ NỘI, VIỆT NAM",
+      "heroByline": "CHIẾN LƯỢC. CÂU CHUYỆN. TÁC ĐỘNG.",
+      "heroIndex": "THẤU HIỂU → Ý TƯỞNG → TÁC ĐỘNG",
+      "scrollHint": "CUỘN ĐỂ KHÁM PHÁ",
+      "workLabel": "DỰ ÁN TIÊU BIỂU",
+      "workHeading1": "Ý tưởng có",
+      "workEmphasis": "mục đích.",
+      "workHeading2": "Nội dung tạo tác động.",
+      "workIntro": "Từ thấu hiểu khách hàng đến triển khai. Một vài dự án tôi đã tham gia và cách tôi tiếp cận bài toán.",
+      "workNote": "MỘT GÓC NHÌN VỀ CÔNG VIỆC CỦA TÔI.",
+      "aboutLabel": "NGƯỜI ĐỨNG SAU Ý TƯỞNG",
+      "aboutHeading": "Xin chào, mình là",
+      "aboutName": "Huy.",
+      "aboutSticker": "TÒ MÒ KHÁM PHÁ. TỰ DO SÁNG TẠO.",
+      "aboutTagline": "Nội dung × Hiệu quả",
+      "aboutCta": "Cùng làm nên nội dung tốt",
+      "journeyLabel": "HÀNH TRÌNH ĐÃ QUA",
+      "expertiseLabel": "CHUYÊN MÔN",
+      "expertiseHeading1": "Sáng tạo từ bản năng.",
+      "expertiseEmphasis": "Chiến lược",
+      "expertiseHeading2": "từ tư duy.",
+      "galleryLabel": "KHÔNG GIAN SÁNG TẠO",
+      "galleryHeading1": "Nội dung khiến",
+      "galleryEmphasis": "bạn dừng lại",
+      "galleryHeading2": "để khám phá.",
+      "galleryIntro": "Hình ảnh, câu chuyện và chuyển động. Những mảnh ghép của công việc sáng tạo.",
+      "galleryEmptyLabel": "KHÔNG GIAN CHO Ý TƯỞNG MỚI",
+      "galleryEmptyTitle": "Ý tưởng mới. Sắp lên hình.",
+      "galleryEmptyText": "Không gian dành cho hình ảnh và video quảng cáo. Nội dung thực tế sẽ được cập nhật tại đây.",
+      "galleryEmptyTag": "Thư viện sáng tạo · Chưa có nội dung",
+      "processLabel": "CÁCH TÔI LÀM VIỆC",
+      "processHeading1": "Bắt đầu từ tò mò.",
+      "processHeading2": "Tiến bước bằng",
+      "processEmphasis": "quy trình.",
+      "processIntro": "Sáng tạo là một quá trình. Mỗi bước đều có lý do.",
+      "processDetailLabel": "TỪ SUY NGHĨ ĐẾN TRIỂN KHAI",
+      "contactLabel": "BẠN ĐANG ẤP Ủ MỘT DỰ ÁN?",
+      "footerWordmark": "CÙNG SÁNG TẠO",
+      "caseOverview": "Tổng quan dự án",
+      "caseChallenge": "Bài toán",
+      "caseObjectives": "Mục tiêu",
+      "caseInsights": "Thấu hiểu khách hàng",
+      "caseStrategy": "Chiến lược sáng tạo",
+      "caseAngles": "Góc tiếp cận nội dung",
+      "caseExecution": "Quy trình triển khai",
+      "caseResults": "Kết quả",
+      "caseLearnings": "Bài học",
+      "caseGallery": "Thư viện hình ảnh & video"
+    },
+    "heroButtons": {
+      "work": "Khám phá dự án",
+      "cv": "Tải CV",
+      "contact": "Liên hệ hợp tác"
+    },
+    "theme": {
+      "background": "#0B0D12",
+      "text": "#F5F4EF",
+      "accent": "#9ebeff",
+      "secondary": "#7C5CFF",
+      "surface": "#171A22"
+    }
+  },
+  "projects": [
+    {
+      "pageLayout": {
+        "version": 1,
+        "pendingMediaIds": [],
+        "blocks": [
+          {
+            "id": "caseHeader",
+            "kind": "caseHeader"
+          },
+          {
+            "id": "cover",
+            "kind": "cover"
+          },
+          {
+            "id": "overview",
+            "kind": "overview"
+          },
+          {
+            "id": "challenge",
+            "kind": "challenge"
+          },
+          {
+            "id": "objectives",
+            "kind": "objectives"
+          },
+          {
+            "id": "insights",
+            "kind": "insights"
+          },
+          {
+            "id": "strategy",
+            "kind": "strategy"
+          },
+          {
+            "id": "angles",
+            "kind": "angles"
+          },
+          {
+            "id": "execution",
+            "kind": "execution"
+          },
+          {
+            "id": "results",
+            "kind": "results"
+          },
+          {
+            "id": "learnings",
+            "kind": "learnings"
+          },
+          {
+            "id": "gallery",
+            "kind": "gallery"
+          }
+        ]
+      },
+      "reviewRequired": false,
+      "id": "project-dasshu",
+      "name": "Dasshu",
+      "slug": "dasshu",
+      "brand": "Dasshu",
+      "industry": "Nông nghiệp / chế phẩm sinh học",
+      "role": "Chuyên viên quảng cáo",
+      "period": "08/2024 — 08/2025",
+      "summary": "Triển khai và tối ưu quảng cáo trong lĩnh vực nông nghiệp, kết hợp phân tích khách hàng, điều chỉnh thông điệp và phối hợp kinh doanh theo mùa vụ.",
+      "overview": "Tại Công ty Cổ phần Chế phẩm Sinh học Dasshu, tôi phụ trách thiết lập và tối ưu các chiến dịch quảng cáo sản phẩm. Công việc kết hợp phân tích khách hàng, thị trường và phối hợp cùng đội kinh doanh để xây dựng kế hoạch quảng cáo phù hợp từng thời điểm.",
+      "challenge": "Trong ngành nông nghiệp, thông điệp quảng cáo cần gắn với nhu cầu khách hàng và thời điểm mùa vụ. Công việc của tôi đòi hỏi việc điều chỉnh thông điệp theo thông tin thị trường và phối hợp kế hoạch quảng cáo với hoạt động kinh doanh.",
+      "objectives": "Tôi tập trung xây dựng kế hoạch quảng cáo phù hợp với nhu cầu khách hàng và hoạt động kinh doanh theo mùa vụ. Việc phân tích thị trường là cơ sở để điều chỉnh thông điệp theo từng thời điểm.",
+      "insights": "",
+      "strategy": "Tôi phân tích khách hàng và thị trường để làm cơ sở điều chỉnh thông điệp quảng cáo. Việc phối hợp với đội kinh doanh giúp kế hoạch truyền thông bám sát nhu cầu thực tế và định hướng bán hàng theo mùa vụ.",
+      "angles": "",
+      "execution": "- Tôi thiết lập và tối ưu các chiến dịch quảng cáo sản phẩm.\n- Tôi phân tích khách hàng, thị trường để điều chỉnh thông điệp.\n- Tôi phối hợp với đội kinh doanh xây dựng kế hoạch quảng cáo theo mùa vụ.\n- Tôi hỗ trợ quản lý, thúc đẩy và đào tạo nhân sự trong đội ngũ tiếp thị.",
+      "results": "",
+      "learnings": "",
+      "resultsVerified": false,
+      "coverId": "ca006578-19e3-4f56-b9ed-72fec543db62",
+      "category": "Nông nghiệp",
+      "tags": [
+        "Chiến lược nội dung",
+        "Meta Ads"
+      ],
+      "seoTitle": "Dasshu — Quảng cáo nông nghiệp | Nguyễn Hữu Huy",
+      "seoDescription": "Tôi triển khai và tối ưu quảng cáo tại Dasshu, phân tích khách hàng, điều chỉnh thông điệp và phối hợp kinh doanh theo mùa vụ.",
+      "status": "published",
+      "order": 0
+    },
+    {
+      "pageLayout": {
+        "version": 1,
+        "pendingMediaIds": [],
+        "blocks": [
+          {
+            "id": "caseHeader",
+            "kind": "caseHeader"
+          },
+          {
+            "id": "cover",
+            "kind": "cover"
+          },
+          {
+            "id": "overview",
+            "kind": "overview"
+          },
+          {
+            "id": "challenge",
+            "kind": "challenge"
+          },
+          {
+            "id": "objectives",
+            "kind": "objectives"
+          },
+          {
+            "id": "insights",
+            "kind": "insights"
+          },
+          {
+            "id": "strategy",
+            "kind": "strategy"
+          },
+          {
+            "id": "angles",
+            "kind": "angles"
+          },
+          {
+            "id": "execution",
+            "kind": "execution"
+          },
+          {
+            "id": "results",
+            "kind": "results"
+          },
+          {
+            "id": "learnings",
+            "kind": "learnings"
+          },
+          {
+            "id": "gallery",
+            "kind": "gallery"
+          }
+        ]
+      },
+      "reviewRequired": false,
+      "id": "project-vnb-global",
+      "name": "VNB Global",
+      "slug": "vnb-global",
+      "brand": "VNB Global",
+      "industry": "Ẩm thực · Philippines",
+      "role": "Chuyên viên quảng cáo",
+      "period": "09/2025 — 12/2025",
+      "summary": "Triển khai quảng cáo sản phẩm đồ ăn tại thị trường Philippines, kết hợp phân tích khách hàng và thiết kế luồng chatbot.",
+      "overview": "Tại VNB Global, tôi tham gia thiết lập và tối ưu chiến dịch quảng cáo sản phẩm đồ ăn cho thị trường Philippines. Phạm vi công việc bao gồm phân tích khách hàng, thị trường và thiết kế sơ đồ chatbot.",
+      "challenge": "Công việc yêu cầu tìm hiểu khách hàng tại một thị trường khác Việt Nam và tổ chức luồng tương tác phù hợp. Tôi triển khai quảng cáo đồng thời xây dựng cấu trúc chatbot phục vụ trao đổi với khách hàng.",
+      "objectives": "Tôi tập trung tìm hiểu khách hàng tại thị trường Philippines để phục vụ việc triển khai quảng cáo sản phẩm đồ ăn. Song song với quảng cáo, tôi xây dựng luồng hội thoại chatbot phục vụ trao đổi với khách hàng.",
+      "insights": "",
+      "strategy": "Tôi kết hợp phân tích khách hàng và thị trường với việc triển khai quảng cáo. Với chatbot, phần việc của tôi là thiết kế sơ đồ và tổ chức luồng hội thoại phục vụ tương tác với khách hàng.",
+      "angles": "",
+      "execution": "- Tôi phân tích khách hàng và thị trường Philippines.\n- Tôi thiết lập và tối ưu chiến dịch quảng cáo sản phẩm đồ ăn.\n- Tôi thiết kế sơ đồ và luồng hội thoại chatbot.",
+      "results": "",
+      "learnings": "",
+      "resultsVerified": false,
+      "coverId": "e325b5c7-ddc2-47a1-a8f3-9d1e11cf287d",
+      "category": "Ẩm thực",
+      "tags": [
+        "Meta Ads",
+        "Chatbot"
+      ],
+      "seoTitle": "VNB Global — Quảng cáo và chatbot | Nguyễn Hữu Huy",
+      "seoDescription": "Tôi triển khai quảng cáo đồ ăn tại thị trường Philippines cho VNB Global, kết hợp phân tích khách hàng và thiết kế luồng hội thoại chatbot.",
+      "status": "published",
+      "order": 1
+    },
+    {
+      "pageLayout": {
+        "version": 1,
+        "pendingMediaIds": [],
+        "blocks": [
+          {
+            "id": "caseHeader",
+            "kind": "caseHeader"
+          },
+          {
+            "id": "cover",
+            "kind": "cover"
+          },
+          {
+            "id": "overview",
+            "kind": "overview"
+          },
+          {
+            "id": "challenge",
+            "kind": "challenge"
+          },
+          {
+            "id": "objectives",
+            "kind": "objectives"
+          },
+          {
+            "id": "insights",
+            "kind": "insights"
+          },
+          {
+            "id": "strategy",
+            "kind": "strategy"
+          },
+          {
+            "id": "angles",
+            "kind": "angles"
+          },
+          {
+            "id": "execution",
+            "kind": "execution"
+          },
+          {
+            "id": "results",
+            "kind": "results"
+          },
+          {
+            "id": "learnings",
+            "kind": "learnings"
+          },
+          {
+            "id": "gallery",
+            "kind": "gallery"
+          }
+        ]
+      },
+      "reviewRequired": false,
+      "id": "project-vibio",
+      "name": "VIBIO",
+      "slug": "vibio",
+      "brand": "VIBIO",
+      "industry": "Nông nghiệp",
+      "role": "Sáng tạo quảng cáo",
+      "period": "2026",
+      "summary": "Phát triển ý tưởng, kịch bản video, hình ảnh và trang đích phục vụ hoạt động quảng cáo trong lĩnh vực nông nghiệp.",
+      "overview": "Tại VIBIO, tôi phát triển nội dung sáng tạo cho quảng cáo nông nghiệp. Phạm vi công việc gồm xây dựng ý tưởng, viết kịch bản video, phát triển hình ảnh và nội dung trang đích phục vụ chiến dịch.",
+      "challenge": "",
+      "objectives": "Tôi hướng tới việc tổ chức nội dung từ ý tưởng đến các điểm chạm quảng cáo và trang đích, với thông điệp rõ ràng và mục tiêu hỗ trợ chuyển đổi.",
+      "insights": "",
+      "strategy": "Tôi phát triển nội dung trong các phạm vi đã tham gia: ý tưởng quảng cáo, kịch bản video, hình ảnh và nội dung trang đích. Trọng tâm là làm rõ thông điệp cho các điểm chạm của chiến dịch.",
+      "angles": "",
+      "execution": "- Tôi phát triển ý tưởng và các hướng nội dung quảng cáo.\n- Tôi viết kịch bản video.\n- Tôi phát triển nội dung hình ảnh.\n- Tôi xây dựng nội dung trang đích.\n- Tôi tham gia phát triển nội dung cho chiến dịch quảng cáo.",
+      "results": "",
+      "learnings": "",
+      "resultsVerified": false,
+      "coverId": "e8525b93-1f6e-4ad1-98af-76134624dc48",
+      "category": "Nông nghiệp",
+      "tags": [
+        "Sáng tạo quảng cáo",
+        "Video",
+        "Trang đích"
+      ],
+      "seoTitle": "VIBIO — Sáng tạo quảng cáo nông nghiệp | Nguyễn Hữu Huy",
+      "seoDescription": "Tôi phát triển ý tưởng, kịch bản video, nội dung hình ảnh và trang đích cho hoạt động quảng cáo nông nghiệp tại VIBIO.",
+      "status": "published",
+      "order": 2
+    },
+    {
+      "reviewRequired": false,
+      "id": "project-miz-workspace",
+      "name": "MIZ Workspace",
+      "slug": "miz-workspace",
+      "brand": "MIZ Workspace",
+      "industry": "Hệ thống quản trị tiếp thị",
+      "role": "Nhà sáng lập & phụ trách sản phẩm",
+      "period": "Dự án cá nhân",
+      "summary": "Thiết kế và phát triển hệ thống quản trị tiếp thị nội bộ, tập trung dữ liệu chiến dịch, chỉ số đánh giá và hiệu suất đội nhóm.",
+      "overview": "MIZ Workspace là dự án tôi thiết kế và phát triển với vai trò nhà sáng lập và phụ trách sản phẩm. Hệ thống hướng tới việc tập trung hoạt động quản trị tiếp thị, giúp nhà quản lý theo dõi dữ liệu chiến dịch và công việc của đội nhóm trên cùng một nền tảng. Trong CV, dự án được giới thiệu là Workspace MIZ — MKT Performance Management System.",
+      "challenge": "",
+      "objectives": "Tôi hướng tới việc kết nối các chỉ số tiếp thị với hoạt động vận hành đội nhóm, tạo một nơi theo dõi chung cho doanh thu, chi phí quảng cáo, dữ liệu khách hàng, đơn chốt và tỷ lệ chuyển đổi.",
+      "insights": "",
+      "strategy": "Tôi thiết kế hệ thống xoay quanh hai nhóm thông tin: dữ liệu chiến dịch và hoạt động của đội ngũ tiếp thị. Các mô-đun tập trung vào bảng điều khiển chỉ số, quản lý nhân sự, đồng bộ dữ liệu quảng cáo và quy trình duyệt nội dung.",
+      "angles": "",
+      "execution": "- Tôi xây dựng bảng điều khiển chỉ số theo thời gian thực: doanh thu, chi phí quảng cáo, dữ liệu khách hàng, đơn chốt và tỷ lệ chuyển đổi.\n- Tôi thiết kế hệ thống chấm công, báo cáo công việc và đánh giá hiệu suất nhân sự tiếp thị.\n- Tôi tích hợp Meta Ads API để đồng bộ dữ liệu quảng cáo tự động.\n- Tôi xây dựng chức năng xếp hạng theo chỉ số đánh giá, quản lý tài sản tiếp thị và quy trình duyệt nội dung.",
+      "results": "",
+      "learnings": "",
+      "resultsVerified": false,
+      "coverId": "1944fa06-7354-4d60-946e-305011ff4b9a",
+      "category": "Công nghệ tiếp thị",
+      "tags": [
+        "Tự động hóa",
+        "Phân tích dữ liệu"
+      ],
+      "seoTitle": "MIZ Workspace — Hệ thống quản trị tiếp thị | Nguyễn Hữu Huy",
+      "seoDescription": "Tôi thiết kế và phát triển MIZ Workspace: bảng điều khiển chỉ số chiến dịch, quản trị đội ngũ tiếp thị và tích hợp Meta Ads API.",
+      "status": "published",
+      "order": 3,
+      "pageLayout": {
+        "version": 1,
+        "blocks": [
+          {
+            "id": "caseHeader",
+            "kind": "caseHeader"
+          },
+          {
+            "id": "cover",
+            "kind": "cover"
+          },
+          {
+            "id": "overview",
+            "kind": "overview"
+          },
+          {
+            "id": "challenge",
+            "kind": "challenge"
+          },
+          {
+            "id": "objectives",
+            "kind": "objectives"
+          },
+          {
+            "id": "insights",
+            "kind": "insights"
+          },
+          {
+            "id": "strategy",
+            "kind": "strategy"
+          },
+          {
+            "id": "angles",
+            "kind": "angles"
+          },
+          {
+            "id": "execution",
+            "kind": "execution"
+          },
+          {
+            "id": "results",
+            "kind": "results"
+          },
+          {
+            "id": "learnings",
+            "kind": "learnings"
+          },
+          {
+            "id": "gallery",
+            "kind": "gallery"
+          }
+        ],
+        "pendingMediaIds": []
+      }
+    }
+  ],
+  "media": [
+    {
+      "id": "1944fa06-7354-4d60-946e-305011ff4b9a",
+      "label": "MIZ",
+      "type": "image",
+      "url": "/media/4b5cc1fa-87e9-4c6e-af94-e8ddeae1f37f.webp",
+      "thumbnailUrl": "",
+      "alt": "MIZ",
+      "projectId": "project-miz-workspace",
+      "slot": "cover",
+      "ratio": "1:1",
+      "status": "published",
+      "order": 0
+    },
+    {
+      "id": "196db4b0-7184-4033-96f7-ae063fdce757",
+      "label": "Ảnh từ builder",
+      "type": "image",
+      "url": "/media/b711c802-4f85-41ed-8f5b-bb58867ab1c4.webp",
+      "thumbnailUrl": "",
+      "alt": "Nguyen Huu Huy",
+      "projectId": "",
+      "slot": "profile",
+      "ratio": "1:1",
+      "status": "published",
+      "order": 0
+    },
+    {
+      "id": "ca006578-19e3-4f56-b9ed-72fec543db62",
+      "presentation": {
+        "fit": "contain",
+        "focusY": 42,
+        "radius": 0
+      },
+      "label": "Dasshu",
+      "type": "image",
+      "url": "/media/d7f59a2e-51b8-4ff7-b3bb-153400561342.webp",
+      "thumbnailUrl": "",
+      "alt": "Dasshu",
+      "projectId": "project-dasshu",
+      "slot": "cover",
+      "ratio": "1:1",
+      "status": "published",
+      "order": 0
+    },
+    {
+      "id": "e325b5c7-ddc2-47a1-a8f3-9d1e11cf287d",
+      "label": "VNB Global",
+      "type": "image",
+      "url": "/media/81b8a36d-28d8-49ad-80a1-d2ff548201f1.jpg",
+      "thumbnailUrl": "",
+      "alt": "VNB Global",
+      "projectId": "project-vnb-global",
+      "slot": "cover",
+      "ratio": "1:1",
+      "status": "published",
+      "order": 0
+    },
+    {
+      "id": "e8525b93-1f6e-4ad1-98af-76134624dc48",
+      "label": "Ảnh từ builder",
+      "type": "image",
+      "url": "/media/44dfd8e4-f8e5-421e-822b-d1fdcdf7ec75.jpg",
+      "thumbnailUrl": "",
+      "alt": "VIBIO",
+      "projectId": "project-vibio",
+      "slot": "cover",
+      "ratio": "1:1",
+      "status": "published",
+      "order": 0
+    }
+  ]
+}
